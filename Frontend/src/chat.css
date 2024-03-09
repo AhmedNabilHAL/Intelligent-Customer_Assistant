@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    background: #7C5CBF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: #6b47b8;
+}
+
+button:disabled {
+    cursor: default;
+    background: #7c5cbf94;
+}
+
+.centered-form {
+    background: #333744;
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form__box {
+    box-shadow: 0px 0px 17px 1px #1D1F26;
+    background: #F7F7FA;
+    padding: 24px;
+    width: 250px;
+}
+
+.centered-form button {
+    width: 100%;
+}
+
+.centered-form input {
+    margin-bottom: 16px;
+    width: 100%;
+} */
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+    height: 75vh;
+    /* flex-grow: 1; */
+}
+
+.chat__sidebar {
+    /* height: 100%; */
+    /* flex-grow: 1; */
+    color: white;
+    background: #333744;
+    width: 225px;
+    /* overflow-y: scroll */
+}
+
+/* Chat styles */
+
+.chat__main {
+    /* flex-grow: 1; */
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* max-height: 100vh; */
+}
+
+.chat__messages {
+    flex-grow: 1;
+    /* height: 100%; */
+    padding: 24px 24px 0 24px;
+    overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px;   
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.message__meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.message a {
+    color: #0070CC;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 24px;
+}
+
+.compose form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 16px 0 0;
+    flex-grow: 1;
+}
+
+.compose button {
+    font-size: 14px;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+    font-weight: 400;
+    font-size: 22px;
+    background: #2c2f3a;
+    padding: 24px;   
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 300;
+    padding: 12px 24px 0 24px;
+}
+
+.bubble-container{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display:flex;
+    font-family: sans-serif;
+    font-size: 14px;
+    align-items: center;
+  }
+  
+  .bubble-direction-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .bubble{
+      background-color: #F2F2F2;
+      border-radius: 5px;
+      box-shadow: 0 0 6px #B2B2B2;
+      display: block;
+      padding: 10px 18px;
+      position: relative;
+      vertical-align: top;
+      color: white;
+      word-wrap: break-word;
+  }
+  
+  .bubble::before {
+      background-color: #F2F2F2;
+      content: "\00a0";
+      display: block;
+      height: 16px;
+      position: absolute;
+      top: 11px;
+      transform:             rotate( 29deg ) skew( -35deg );
+          -moz-transform:    rotate( 29deg ) skew( -35deg );
+          -ms-transform:     rotate( 29deg ) skew( -35deg );
+          -o-transform:      rotate( 29deg ) skew( -35deg );
+          -webkit-transform: rotate( 29deg ) skew( -35deg );
+      width:  20px;
+  }
+  
+  .me {
+      background-color: #8f5db7;
+      margin-left: 18px;
+      margin-right:60px;
+  }
+  
+  .me::before {
+      box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+      left: -9px;
+      background-color: #8f5db7;
+  }
+  
+  .you {
+      background-color: #087FFE;
+      margin-left: 60px;
+      margin-right:18px;
+  }
+  
+  .you::before {
+      box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+      right: -9px;
+      background-color: #087FFE;
+  }
+  
+  .img-circle {
+    border-radius: 42%;
+    height:42px;
+    width:42px;
+  }
+  
